@@ -13,7 +13,7 @@ h1,h2,.subtitle{
     width: 80%;
 }
 
- .sample{
+.sample{
     background-color: #F2B05A;
     padding: 10px;
     width: 100%;
@@ -35,9 +35,10 @@ img{
     font-weight: bold;
 }
 
-footer a:link, footer a:visited{
-    text-decoration: none;
-   /* text-decoration-color: none #705838;*/
+footer a{
+     /*//text-decoration: none;*/
+    text-decoration-line: none;
+    text-decoration-color: #705838;
     font-weight: bold;
 
 }
