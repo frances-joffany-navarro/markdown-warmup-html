@@ -2,10 +2,10 @@ body{
     background-color: #F0CDA1;
     color: #705838;
 }
-p, a, td{
+ol, ul, p, a, td{
     font-family: 'Courier New', Courier, monospace;
 }
-h2,.subtitle{
+h1,h2,.subtitle{
     font-family: Arial, Helvetica, sans-serif;
 }
 .content {
@@ -16,6 +16,28 @@ h2,.subtitle{
  .sample{
     background-color: #F2B05A;
     padding: 10px;
-    width: 1000px;
+    width: 100%;
     margin: 10px;
+    float:left;
+}
+
+.html, .result{
+    float: left;
+    width:50%;
+    list-style: inside;
+}
+
+img{
+    width:70%;
+
+}
+.html p:first-child, .result p:first-child{
+    font-weight: bold;
+}
+
+footer a:link, footer a:visited{
+    text-decoration: none;
+   /* text-decoration-color: none #705838;*/
+    font-weight: bold;
+
 }
