@@ -1,125 +1,221 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Markdown to HTML</title>
-        <script type="text/javascript" >
-            var name  = window.prompt("Please enter your name");      
-            if(name == null){
-                alert("Hello Guest!");
-            }else{
-                alert("Hello " + name + "!");
-            }
-        </script>
-    </head>
-    <body>
-        <h1>Hypertext Markup Language (HTML)</h1>
-        <p> is the standard markup language for documents designed to be displayed in a web browser. 
-            It can be assisted by technologies such as <b>Cascading Style Sheets (CSS)</b> and scripting languages such as <b>JavaScript.</b>  </p>
-        
-        <h2>Example of HTML Codes</h2>
-            
-            <h3>Unordered list</h3>
-                <p>To create an unordered list use &lt;ul&gt; tag.</p>
-                <p>Code:</p>
-                    <p>
-                        &lt;ul&gt; <br>
-                            &lt;li&gt; Item 1 &lt;/li&gt; <br>
-                            &lt;li&gt; Item 2 &lt;/li&gt; <br>
-                            &lt;li&gt; Item 3 &lt;/li&gt; <br>
-                        &lt;/ul&gt;
-                    </p>
 
-                <p>Result:</p>
-                    <ul>
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
-                    </ul>
-            <h3>Ordered list</h3> 
-                <p>To create an ordered list use &lt;ol&gt; tag.</p>
-                <p>Code:</p> 
-                    <p>
-                        &lt;ol&gt; <br>
-                            &lt;li&gt; Last Name &lt;/li&gt; <br>
-                            &lt;li&gt; First Name &lt;/li&gt; <br>
-                            &lt;li&gt; Age &lt;/li&gt; <br>
-                        &lt;/ol&gt;
-                    </p>
-                <p>Result:</p> 
-                    <ol>
-                        <li>Last Name</li>
-                        <li>First Name</li>
-                        <li>Age</li>
-                    </ol>
-            <h3>List within a list</h3>
-            <p>Code:</p> 
-                <p>
-                    &lt;ol&gt; <br>
-                        &lt;li&gt; Profile &lt;/li&gt; <br>
-                            &lt;ul&gt; <br>
+<head>
+    <title>Markdown to HTML</title>
+
+    <!--stylesheet-->
+    <link href="style.css" rel="stylesheet">
+
+    <!--scripts-->
+    <script type="text/javascript">
+        /*var name = window.prompt("Please enter your name");
+        if (name == null) {
+            alert("Hello Guest!");
+        } else {
+            alert("Hello " + name + "!");
+        }*/
+    </script>
+</head>
+
+<body>
+    <div class="content">
+        <h2>Hypertext Markup Language (HTML)</h2>
+        <p class="description"> is the standard markup language for documents designed to be displayed in a web browser.
+            It can be assisted by technologies such as <b>Cascading Style Sheets (CSS)</b> and scripting languages such
+            as
+            <b>JavaScript.</b>
+        </p>
+
+        <h2>HTML Tags</h2>
+        <div>
+            <h3 class = "subtitle">Unordered list</h3>
+            <p class = "description">To create an unordered list use &lt;ul&gt; tag.</p>
+            <div class=sample>
+                <table>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Result</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                &lt;ul&gt; <br>
+                                &lt;li&gt; Item 1 &lt;/li&gt; <br>
+                                &lt;li&gt; Item 2 &lt;/li&gt; <br>
+                                &lt;li&gt; Item 3 &lt;/li&gt; <br>
+                                &lt;/ul&gt;
+                            </p>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div>
+            <h3 class = "subtitle">Ordered list</h3>
+            <p class="description">To create an ordered list use &lt;ol&gt; tag.</p>
+
+            <div class=sample>
+                <table>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Result</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                &lt;ol&gt; <br>
                                 &lt;li&gt; Last Name &lt;/li&gt; <br>
                                 &lt;li&gt; First Name &lt;/li&gt; <br>
                                 &lt;li&gt; Age &lt;/li&gt; <br>
-                            &lt;/ul&gt;<br>
-                        &lt;li&gt; Document Needed &lt;/li&gt; <br>
-                            &lt;ol&gt; <br>
+                                &lt;/ol&gt;
+                            </p>
+                        </td>
+                        <td>
+                            <ol>
+                                <li>Last Name</li>
+                                <li>First Name</li>
+                                <li>Age</li>
+                            </ol>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div>
+            <h3 class = "subtitle">List within a list</h3>
+            <div class=sample>
+                <table>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Result</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                &lt;ol&gt; <br>
+                                &lt;li&gt; Profile &lt;/li&gt; <br>
+                                &lt;ul&gt; <br>
+                                &lt;li&gt; Last Name &lt;/li&gt; <br>
+                                &lt;li&gt; First Name &lt;/li&gt; <br>
+                                &lt;li&gt; Age &lt;/li&gt; <br>
+                                &lt;/ul&gt;<br>
+                                &lt;li&gt; Document Needed &lt;/li&gt; <br>
+                                &lt;ol&gt; <br>
                                 &lt;li&gt; Identity Card &lt;/li&gt; <br>
                                 &lt;li&gt; Bank Card &lt;/li&gt; <br>
                                 &lt;li&gt; Registration Form &lt;/li&gt; <br>
-                            &lt;/ol&gt;<br>
-                    &lt;/ol&gt;<br>
-                </p>    
-            <p>Result:</p> 
-            <ol>
-                <li>Profile</li>
-                    <ul>
-                        <li>Last Name</li>
-                        <li>First Name</li>
-                        <li>Birthday</li>
-                    </ul>
-                <li>Document Needed</li>
-                    <ol>
-                        <li>Identity Card</li>
-                        <li>Bank Card</li>
-                        <li>Registration Form</li>
-                    </ol>
-            </ol>
-            <h3>Titles and Subtitles</h3>
-                <p>Headers are used to emphasize any titles and subtitles of a page</p>
+                                &lt;/ol&gt;<br>
+                                &lt;/ol&gt;<br>
+                            </p>
+                        </td>
+                        <td>
+                            <ol>
+                                <li>Profile</li>
+                                <ul>
+                                    <li>Last Name</li>
+                                    <li>First Name</li>
+                                    <li>Birthday</li>
+                                </ul>
+                                <li>Document Needed</li>
+                                <ol>
+                                    <li>Identity Card</li>
+                                    <li>Bank Card</li>
+                                    <li>Registration Form</li>
+                                </ol>
+                            </ol>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div>
+            <h3 class = "subtitle">Titles and Subtitles</h3>
+            <p class="description">Headers are used to emphasize any titles and subtitles of a page</p>
+            <div class=sample>                
                 <h1>&lt;h1&gt; tag is use for the title of the page</h1>
                 <h2>&lt;h2&gt; tag is use for subtitles</h2>
-            
-            <h3>Links</h3>
-                <p>In creating links in HTML you use the &lt;a&gt; tag.</p>
-                <p>Syntax: <br>
-                    &lt;a href= "https://github.com/frances-joffany-navarro" &gt; My github account &lt;/a&gt;
-                    &lt;a href= "https://linkedin.com/in/frances-navarro-05775a126" &gt; My Linkedin Bio &lt;/a&gt;
-                    &lt;p&gt;Learn more about the organization &lt;a href="becode.org">Becode&lt;/a&gt;&lt;/p&gt;
-                </p>
-                <p>Examples:</p>
-                <a href="https://github.com/frances-joffany-navarro">My github account</a><br>
-                <a href="https://linkedin.com/in/frances-navarro-05775a126">My Linkedin Bio</a><br>
-                <p>Learn more about the organization <a href="becode.org">Becode</a></p> 
-            
-            <h3>Static image</h3>
-                <p>In adding static image in HTML you use the &lt;img&gt; tag. They use images with .jpg or .png extention file for static images</p>
-                <p>Syntax: <br>
-                    &lt;img src= "/image.jpg" alt= "image"&gt;
+            </div>
+
+        </div>
+
+        <div>
+            <h3 class = "subtitle">Links</h3>
+            <p class="description">In creating links in HTML you use the &lt;a&gt; tag.</p>
+            <div class=sample>
+                <table>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Result</td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                &lt;a href= "https://github.com/frances-joffany-navarro" &gt; My github account
+                                &lt;/a&gt;
+                                <br>
+                                &lt;a href= "https://linkedin.com/in/frances-navarro-05775a126" &gt; My Linkedin Bio
+                                &lt;/a&gt;
+                                <br>
+                                &lt;p&gt;Learn more about the organization &lt;a
+                                href="becode.org">Becode&lt;/a&gt;&lt;/p&gt;
+                            </p>
+                        </td>
+                        <td>
+                            <a href="https://github.com/frances-joffany-navarro">My github account</a><br>
+                            <a href="https://linkedin.com/in/frances-navarro-05775a126">My Linkedin Bio</a><br>
+                            <p>Learn more about the organization <a href="becode.org">Becode</a></p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div>
+            <h3 class = "subtitle">Static image</h3>
+            <p class="description">In adding static image in HTML you use the &lt;img&gt; tag. They use images with .jpg
+                or .png extention file for static images</p>
+            <div class=sample>
+                <p>HTML &lt;img src= "/image.jpg" alt= "image"&gt;
                 </p>
                 <p>Result:</p>
                 <img src="images/sunset.jpg" alt="sunset" width="50%">
-            
-            <h3>Animated image</h3>
-                <p>when adding an animated image in HTML you also use the &lt;img&gt; tag. The only difference is the extention file. They use .gif extention file for animated image</p>
-                <p>Syntax: <br>
-                    &lt;img src= "/Robot.gif" alt= "Robot"&gt;
+            </div>
+        </div>
+
+        <div>
+            <h3 class = "subtitle">Animated image</h3>
+            <p class=description>when adding an animated image in HTML you also use the &lt;img&gt; tag. The only
+                difference is the extention file. They use .gif extention file for animated image</p>
+            <div class=sample>
+                <p>HTML &lt;img src= "/Robot.gif" alt= "Robot"&gt;
                 </p>
                 <p>Result:</p>
                 <img src="images/Robot.gif" alt="Robot">
-            
-            <h3>a bit of code</h3>
-            <p>You have seen it</p>
+            </div>
 
-        <a href="https://frances-joffany-navarro.github.io/markdown-warmup-html/">Go to README</a>
-    </body>
+        </div>
+
+        <div>
+            <h3 class = "subtitle">a bit of code</h3>
+            <p class="description">You have seen it</p>
+        </div>
+    </div>
+    <footer>
+        <a href="https://frances-joffany-navarro.github.io/markdown-warmup-html/">Go back</a>
+    </footer>
+
+</body>
+
 </html>

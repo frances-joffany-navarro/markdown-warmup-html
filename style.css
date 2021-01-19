@@ -1,0 +1,21 @@
+body{
+    background-color: #F0CDA1;
+    color: #705838;
+}
+p, a, td{
+    font-family: 'Courier New', Courier, monospace;
+}
+h2,.subtitle{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content {
+    margin: auto;
+    width: 80%;
+}
+
+ .sample{
+    background-color: #F2B05A;
+    padding: 10px;
+    width: 1000px;
+    margin: 10px;
+}
