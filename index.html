@@ -3,8 +3,12 @@
     <head>
         <title>Markdown to HTML</title>
         <script type="text/javascript" >
-            var name  = window.prompt("Please enter your name");        
-            alert("Hello " + name);
+            var name  = window.prompt("Please enter your name");      
+            if(name == null){
+                alert("Hello Guest!");
+            }else{
+                alert("Hello " + name + "!");
+            }
         </script>
     </head>
     <body>
@@ -103,7 +107,7 @@
                     &lt;img src= "/image.jpg" alt= "image"&gt;
                 </p>
                 <p>Result:</p>
-                <img src="../sunset.jpg" alt="sunset" width="50%">
+                <img src="../images/sunset.jpg" alt="sunset" width="50%">
             
             <h3>Animated image</h3>
                 <p>when adding an animated image in HTML you also use the &lt;img&gt; tag. The only difference is the extention file. They use .gif extention file for animated image</p>
@@ -111,11 +115,11 @@
                     &lt;img src= "/Robot.gif" alt= "Robot"&gt;
                 </p>
                 <p>Result:</p>
-                <img src="../Robot.gif" alt="Robot">
+                <img src="../images/Robot.gif" alt="Robot">
             
             <h3>a bit of code</h3>
             <p>You have seen it</p>
 
-        <a href="https://github.com/frances-joffany-navarro/markdown-warmup-html/blob/main/README.md">Go to README</a>
+        <a href="https://frances-joffany-navarro.github.io/markdown-warmup-html/">Go to README</a>
     </body>
 </html>
