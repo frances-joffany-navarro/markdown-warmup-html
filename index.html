@@ -9,12 +9,15 @@
 
     <!--scripts-->
     <script type="text/javascript">
-        /*var name = window.prompt("Please enter your name");
-        if (name == null) {
+        var name = window.prompt("Please enter your name");
+        
+        if (name === ' ' || name === null) {
             alert("Hello Guest!");
-        } else {
+        } else if(name){
             alert("Hello " + name + "!");
-        }*/
+        }else{
+            alert("Hello Guest!");
+        }
     </script>
 </head>
 
